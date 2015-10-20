@@ -7,6 +7,7 @@
 //
 
 #import "RCTSoundCloud.h"
+#import "RCTBridge.h"
 
 @interface RCTSoundCloud()
 
@@ -18,7 +19,7 @@
 }
 
 - (NSString*)scURL {
-    return _imageURL;
+    return _scURL;
 }
 
 -(void)setScURL:(NSString *)scURL{

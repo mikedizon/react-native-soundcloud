@@ -6,9 +6,13 @@
 //  Copyright © 2015 Michael Dizon. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface RCTSoundCloud : NSObject
+#import "UIView+React.h"
+
+@class RCTBridge;
+
+@interface RCTSoundCloud : UIView
 
 @property (nonatomic) NSString *scURL;
 
