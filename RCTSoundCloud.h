@@ -15,6 +15,7 @@
 @interface RCTSoundCloud : UIView
 
 @property (nonatomic) NSString *scURL;
+@property (nonatomic) NSString *scClientID;
 
 - (instancetype)initWithBridge:(RCTBridge *)bridge;
 

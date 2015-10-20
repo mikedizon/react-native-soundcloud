@@ -16,6 +16,7 @@
 @implementation RCTSoundCloud{
     RCTBridge *_bridge;
     NSString *_scURL;
+    NSString *_scClientID;
 }
 
 - (NSString*)scURL {
@@ -26,6 +27,13 @@
     _scURL = scURL;
 }
 
+- (NSString*)scClientID {
+    return _scURL;
+}
+
+-(void)setScClientID:(NSString *)scClientID{
+    _scClientID = scClientID;
+}
 
 - (instancetype)initWithBridge:(RCTBridge *)bridge {
     self = [super initWithFrame:CGRectZero];
